@@ -6,9 +6,55 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./src/styles/globalStyles.css">
     <link rel="stylesheet" href="./src/styles/index.css">
-    <title>Login</title>
+    <link rel="stylesheet" href="./src/styles/modal.css">
+    <script src="./src/scripts/modal.js" defer></script>
+    
+    <title>Login HIVE</title>
 </head>
 <body>
-    <script src="./src/scripts/modal.js"></script>
+    <div class="modal-wrappper" id="reset-password">
+        <div class="modal">
+            <div class="modal-header">
+                <h3>Recuperar Senha</h3>
+                <button class="modal-close" data-modal-control="reset-password">x</button>
+
+            </div>
+            <div class="modal-body">
+                <p>Digite o seu e-mail de cadastro que enviaremos um código para redefinir a sua senha.</p>
+               <input type="email" placeholder="Digite seu email aqui...">
+                <button>Enviar</button>
+            </div>
+        </div>
+    </div>
+    <div class="container-login">
+        <div class="aside-logo">
+            <img src="./src/img/HIVE C Nome.png" alt="">
+            <p class="hive-description">Seja bem vindo a HIVE!</p>
+            <p>As roupas minimalistas mais amadas do Brasil, acesse o site da Hive e aproveite! </p>
+            <p>Encontre a peça ideal para você na Coleção de Alto Verão.</p>
+        </div>
+        <div class="aside-login-container">   
+            <div class="aside-login">
+                <div class="login-text-welcome">
+                    <p id="login-text">Login</p>
+                    <span>Ei, seja bem-vindo de volta!</span>
+                </div>
+                <div class="container-email">              
+                    <label for="email">email:</label>
+                    <input type="text" id="email" placeholder="Digite seu e-mail aqui...">
+                </div>
+                <div class="container-password"> 
+                    <label for="email">password:</label>
+                    <input type="password" id="password" placeholder="Digite sua senha aqui...">
+                </div>
+                <a href="#"  class="forgot-password" data-modal-control="reset-password">Esqueceu a senha?</a>
+                <div class="Login-decoration">
+                    <button class="button-login">Login</button>
+                    <img id="bee-img" src="./src/img/bee.png" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
 </body>
 </html>
+

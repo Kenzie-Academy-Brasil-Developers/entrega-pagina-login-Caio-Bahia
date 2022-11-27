@@ -1,0 +1,105 @@
+/* MODAL */
+
+.modal-wrappper{
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0,0,0,0.5);
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    z-index: 1;
+}
+.modal{
+    width: 346px;
+    background-color: var(--color-yellow-4);
+    border-radius: 8px;
+    
+
+}
+.modal-header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 36px 22px;
+}
+.modal-body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 0px 22px;
+    padding-bottom: 22px;
+}
+.modal-close{
+    width: 24px;
+    height: 24px;
+    background: transparent;
+    border: none;
+    font-size: 24px;
+    font-weight: 300;
+}
+
+.modal-close:hover{
+    cursor: pointer;
+    color: red;
+}
+
+.modal-body{
+    display: flex;
+    gap: 20px;
+}
+.modal-body p{
+    padding: 0px 0px;
+}
+
+.modal-body input{
+
+    width: 298px;
+    height: 44px;
+    border: none;
+    border-radius: 8px;
+    padding: 10px;
+
+}
+
+.modal-body button{
+
+    width: 298px;
+    height: 44px;
+
+    border: none;
+    border-radius: 8px;
+
+    background-color: var(--color-yellow-1);
+}
+
+.modal-body button:hover{
+    color: red;
+    
+}
+
+
+.show-modal{
+    display: flex;
+}
+
+/* Animação */
+
+.show-modal .modal{
+    animation: modalAnimation 1s ease;
+}
+
+@keyframes modalAnimation {
+    0%{
+        opacity: 0;
+        transform: translateY(-60%);
+    }
+    100%{
+        opacity: 1;
+        transform: translateY(0%);
+    }
+    
+}
