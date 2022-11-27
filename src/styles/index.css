@@ -114,7 +114,12 @@ text-align: center;
 
 .Login-decoration{
    height: 44px;
+   
 }
+
+/* .Login-decoration > img:hover{
+    opacity: 1;
+} */
 
 .aside-login .button-login{
     height: 44px;
@@ -130,11 +135,15 @@ text-align: center;
 }
 
 #bee-img{
+
     height: 44px;
     width: 44px;
     position: relative;
     bottom: 45px;
     left: 190px;
+
+} 
+
+.hidden-bee{
+    display: none;
 }
-
-

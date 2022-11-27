@@ -7,3 +7,19 @@ for(let index = 0;index < buttonToggleModal.length;index++){
         console.log()
     })
 }
+
+// ABEIA
+
+const hideBee = document.getElementsByClassName("button-login")[0]
+console.log(hideBee)
+const bee =  document.querySelector("#bee-img")
+
+hideBee.addEventListener("mouseenter", ()=>{
+    bee.classList.remove("hidden-bee")
+
+})
+hideBee.addEventListener("mouseleave", ()=>{
+    bee.classList.add("hidden-bee")
+
+})
+
